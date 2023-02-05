@@ -398,18 +398,138 @@
                 </ul>
             </div>
         </section>
-        <!-- <section id="" class="">
-            <h2 class="section-title">
-                Хочу тур
-            </h2>
+        <section id="tour" class="tour section-offset">
+          <div class="container tour-container">
+            <h2 class="section-title tour-title">Хочу тур</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" class="tour-form flex">
+              <div class="form-element city-container flex">
+                <label class="label-name">Город вылета</label>
+                <select class="form-select" name="city" required>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                </select>
+              </div>
+              <div class="form-element country-container flex">
+                <label class="label-name">Страна</label>
+                <select class="form-select" name="country" required>
+                  <option value="Австралия">Австралия</option>
+                </select>
+              </div>
+              <div class="form-element date-container flex">
+                <label class="label-name">Дата прибытия</label>
+                <input class="form-input" type="date" name="date" value="2023-02-05" required>
+              </div>
+              <div class="form-element nights-container flex">
+                <label class="label-name">Ночей</label>
+                <input class="form-input input-number" type="number" name="nights" value="6" required>
+              </div>
+              <div class="form-element tourists-container flex">
+                <label class="label-name">Туристы</label>
+                <input class="form-input input-number" type="number" name="tourists" value="2" required>
+              </div>
+              <button class="btn btn-reset tour-btn form-element">
+                Найти
+              </button>
+            </form>
+          </div>
         </section>
-        <section id="" class="">
+        <section id="contacts" class="contacts section-offset">
+          <div class="container">
             <h2 class="section-title">
                 Контакты
             </h2>
-        </section> -->
-
+            <div class="contacts-container flex">
+            <address class="contacts-info">
+              <ul class="list-reset contacts-list">
+                <li class="contacts-item flex contacts-item-address">
+                  <strong class="item-caption">
+                     Адрес
+                   </strong>
+                  <p class="text-descr">Москва, улица Юности, <br/>дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+                </li>
+                <li class="contacts-item flex contacts-item-phone">
+                  <strong class="item-caption">
+                    Телефоны
+                  </strong>
+                  <div class="tel-container flex">
+                    <a href="tel:+74995356434" class="contacts-item-link">
+                      +7&nbsp;499 535-64-34
+                    </a>
+                    <a href="tel:+74950050544" class="contacts-item-link">
+                      +7&nbsp;495 005-05-44
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-item flex contacts-item-mail">
+                  <strong class="item-caption">
+                    Email
+                  </strong>
+                  <div class="mail-container flex">
+                    <a href="mailto:lg.oona@mail.ru" class="contacts-item-link">
+                      lg.oona@mail.ru
+                    </a>
+                    <p class="text-descr mail-descr">по&nbsp;вопросам бронирования</p>
+                    <a href="mailto:hotels.ln@mail.ru" class="contacts-item-link">
+                      hotels.ln@mail.ru
+                    </a>
+                    <p class="text-descr mail-descr">по&nbsp;вопросам сотрудничества</p>
+                  </div>
+                </li>
+                <li class="contacts-item flex contacts-item-schedule">
+                  <strong class="item-caption">
+                    График
+                  </strong>
+                  <p class="text-descr">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</p>
+                </li>
+                <li class="contacts-item flex contacts-item-btn">
+                  <button class="btn btn-reset btn-contacts">
+                    Построить маршрут
+                  </button>
+                </li>
+              </ul>
+            </address>
+            <img src="img/contacts-img.png" alt="Lagoona-Hotel">
+            </div>
+          </div>
+        </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-container flex">
+        <div class="footer-left flex">
+          <small class="footer-copy">
+            &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+          </small>
+          <p class="footer-text">Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой</p>
+          <a href="#" class="footer-link">Пользовательское соглашение</a>
+        </div>
+        <div class="footer-center">
+          <p class="footer-address">
+            11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+          </p>
+          <div class="footer-phones flex">
+            <a href="tel:+74995356434" class="contacts-item-link">
+              +7&nbsp;499 535-64-34
+            </a>
+            <a href="tel:+74950050544" class="contacts-item-link">
+              +7&nbsp;495 005-05-44
+            </a>
+          </div>
+          <div class="footer-mail flex">
+            <a href="mailto:lg.oona@mail.ru" class="contacts-item-link">
+              lg.oona@mail.ru
+            </a>
+            <a href="mailto:hotels.ln@mail.ru" class="contacts-item-link">
+              hotels.ln@mail.ru
+            </a>
+          </div>
+        </div>
+        <ul class="list-reset social flex">
+					<li class="social-item"><a href="#" class="social-link social-link-sova"></a></li>
+					<li class="social-item"><a href="#" class="social-link social-link-ok"></a></li>
+					<li class="social-item"><a href="#" class="social-link social-link-vk"></a></li>
+				</ul>
+      </div>
+    </footer>
 
 </body>
 </html>
